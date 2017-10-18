@@ -118,6 +118,7 @@ function getLivingNeighbours(old, id) {
 }
 
 function clear() {
-	for(var i = 0; i < living.length; i++)
-		toggle(living[i]);
+	while(living.length > 0)
+		for(var i = 0; i < living.length; i++)
+			toggle(living[i]);
 }
